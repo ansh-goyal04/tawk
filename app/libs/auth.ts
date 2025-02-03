@@ -39,21 +39,21 @@ export const authOptions:AuthOptions={
                     return null;
                 }
 
-                try{
-                    const newUser=await prisma.user.create({
-                        data:{
-                            email:credentials.email,
-                            hashedPassword:hashedPassword
-                        }
-                    });
+                // try{
+                //     const newUser=await prisma.user.create({
+                //         data:{
+                //             email:credentials.email,
+                //             hashedPassword:hashedPassword
+                //         }
+                //     });
 
-                    return newUser
+                //     return newUser
 
                     
-                }
-                catch(err){
-                    console.log(err);
-                }
+                // }
+                // catch(err){
+                //     console.log(err);
+                // }
                 return null;
             }
         }),
