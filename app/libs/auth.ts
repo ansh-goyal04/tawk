@@ -63,6 +63,9 @@ export const authOptions:AuthOptions={
             clientSecret:process.env.AUTH_GOOGLE_SECRET || ""
         })
     ],
+    // pages:{
+    //     signIn:'app/components/AuthForm'
+    // },
     secret:process.env.JWT_SECRET||"secret",
     callbacks:{
         async session({token,session}:any){
